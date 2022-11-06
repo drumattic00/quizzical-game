@@ -1,0 +1,11 @@
+1. create quiz greeting screen
+    - h1: Quizzical
+    - p: Welcome to Quizzical. Click the button below to start your quiz!
+    - button: Start Quiz
+
+2. Create quiz screen
+    - Made from Question Components
+        - h3: Question
+        - button(x4): answers
+        - hr
+        - button: check answers

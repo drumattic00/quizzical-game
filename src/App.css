@@ -1,0 +1,114 @@
+:root{
+    --main-font: 'Prompt', sans-serif;
+    --scnd-font: 'Inter', sans-serif;
+    --main-color: #000e60;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: var(--main-font);
+    font-size: 4rem;
+    color: var(--main-color)
+}
+
+h3{
+    font-family: var(--main-font);
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+body{
+    font-family: var(--scnd-font);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.app-container {
+    height: 90vh;
+    width: 80vw;
+    max-width: 900px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    row-gap: 1rem;
+    border: 1px solid var(--main-color);
+    border-radius:30px;
+    padding:1rem 3rem;
+}
+/*************************************/
+/* Quiz Welcome Screen */
+p {
+    font-size: 2rem;
+    text-align: center;
+    line-height: 150%;
+}
+
+.wlc-scrn {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    row-gap: 5rem;
+}
+
+.btn--start-quiz {
+    padding: 2rem 3rem;
+    border-radius: 13px;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--main-color)
+}
+
+.btn--start-quiz:hover {
+    background-color: var(--main-color);
+    color: #fff;
+}
+/*************************************/
+/* Quiz Screen */
+.answers-box{
+    display:flex;
+    column-gap: 2rem;
+    justify-content: flex-start;
+}
+
+.btn--answer{
+    padding: .5rem 1rem;
+    border-radius: 30px;
+    border: 2px solid var(--main-color);
+    font-size: .8rem;
+    font-weight: 600;
+}
+
+.btn--answer:hover {
+    background-color: var(--main-color);
+    color: #fff;
+}
+
+.quiz-item-container {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+.btn--check-ans {
+    padding: 1rem 2rem;
+    margin-top: 1rem;
+    border-radius: 13px;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--main-color);
+    align-self: center;
+}
